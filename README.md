@@ -1,14 +1,14 @@
 # Yuuno on Linux/osx
 This guide is an attempt to help one installing and using VapourSynth with Yuuno on a non-windows computer.
 
-#### Table of contents
+## Table of contents
 + [Prerequisites](#prerequisites)
-+ [Installing Python 3.6.4 via pyenv](#installing-python-3.6.4-via-pyenv)
++ [Installing Python 3.6.4 via pyenv](#installing-python-364-via-pyenv)
 + [Plugins](#plugins)
 + [Scripts](#scripts)
 + [Using Yuuno](#using-yuuno)
 
-#### Prerequisites:
+## Prerequisites:
 + [Python 3](https://www.python.org/)
 + osx-only: [homebrew](https://brew.sh/)  
   install it with this command:  
@@ -29,7 +29,7 @@ On Linux, you have to install most of them manually...
 Then install the packages that I included.  
 They may need some additional configuration apart from the usual CMMI process.
 
-#### Installing Python 3.6.4 via pyenv
+## Installing Python 3.6.4 via pyenv
 Python 3.6.6 apparently does not work, but this version does ;)  
 
 Open the file ~/.bash_profile and put this line there:  
@@ -44,7 +44,7 @@ Activate the pyenv and install internal dependencies:
 `pip install jupyter vapoursynth yuuno numpy`  
 `python -m ipykernel install --user`  
 
-#### Plugins
+## Plugins
 Included Plugins are:  
 + [AddGrain](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-AddGrain)
 + [Bilateral](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-Bilateral)
@@ -59,10 +59,10 @@ I included the compiled libraries for osx.
 You can autoload the plugins by putting them into `/usr/local/lib/vapoursynth`, if they don’t appear there after installing.  
 More information can be found [here](http://www.vapoursynth.com/doc/autoloading.html#linux).
 
-#### Scripts
+## Scripts
 Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of the folder `scripts` in this directory.  
 
-#### Using Yuuno
+## Using Yuuno
 Start up jupyter: `jupyter notebook`  
 You can now navigate in your default browser to some directory and create a new script (choose Python 3).  
 Once you created a new script, you have to load yuuno first: `%load_ext yuuno`  
