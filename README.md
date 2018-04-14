@@ -7,8 +7,14 @@ This guide is an attempt to help one installing and using VapourSynth with Yuuno
 + [Plugins](#plugins)
 + [Scripts](#scripts)
 + [Using Yuuno](#using-yuuno)
-
-## Prerequisites:
+## Download
+Download the package via MEGA [here](link).
+It includes the following:
++ this readme
++ uncompiled dependencies and VS plugins
++ compiled VS plugins for osx
++ some scripts for VS
+## Prerequisites
 + [Python 3](https://www.python.org/)
 + osx-only: [Homebrew](https://brew.sh/)  
   install it with this command:  
