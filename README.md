@@ -10,7 +10,7 @@ This guide is an attempt to help one installing and using VapourSynth with Yuuno
 
 ## Prerequisites:
 + [Python 3](https://www.python.org/)
-+ osx-only: [homebrew](https://brew.sh/)  
++ osx-only: [Homebrew](https://brew.sh/)  
   install it with this command:  
   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 + [x264](https://www.videolan.org/developers/x264.html)  
@@ -18,14 +18,16 @@ This guide is an attempt to help one installing and using VapourSynth with Yuuno
 + [pyenv](https://github.com/pyenv/pyenv)
 + [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 + [pyenv-virtualenvwrapper](https://github.com/pyenv/pyenv-virtualenvwrapper)
-+ [l-smash](https://github.com/l-smash/l-smash)
++ [L-SMASH](https://github.com/l-smash/l-smash)
 
 Install them:  
 osx: `brew install python3 pyenv pyenv-virtualenv pyenv-virtualenvwrapper l-smash`  
 
 On Linux, you have to install most of them manually...  
-`sudo apt-get update`  
-`sudo apt-get install -y build-essential checkinstall git libfaac-dev libgpac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev librtmp-dev libtheora-dev libvorbis-dev pkg-config texi2html yasm zlib1g-dev python3 libx264-dev`  
+```
+sudo apt-get update
+sudo apt-get install -y build-essential checkinstall git libfaac-dev libgpac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev librtmp-dev libtheora-dev libvorbis-dev pkg-config texi2html yasm zlib1g-dev python3 libx264-dev
+```  
 Then install the packages that I included.  
 They may need some additional configuration apart from the usual CMMI process.
 
@@ -40,10 +42,11 @@ Install Python 3.6.4 with pyenv:
 Create a new virtualenv (you can name it whatever you want tho, I chose jupyter3):  
 `pyenv virtualenv 3.6.4 jupyter3`  
 Activate the pyenv and install internal dependencies:  
-`pyenv activate jupyter3`  
-`pip install jupyter vapoursynth yuuno numpy`  
-`python -m ipykernel install --user`  
-
+```
+pyenv activate jupyter3
+pip install jupyter vapoursynth yuuno numpy
+python -m ipykernel install --user
+```
 ## Plugins
 Included Plugins are:  
 + [AddGrain](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-AddGrain)
