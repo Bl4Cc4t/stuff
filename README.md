@@ -25,7 +25,7 @@ The newest Python 3.6.6 apparently does not work, but this version does ;)
 
 To work, pyenv has to be initialized first.
 
-```
+```
 echo "eval '\$(pyenv init -)'" >> ~/.bash_profile
 ```
 
@@ -33,7 +33,7 @@ Then start a new terminal session by closing and reopening a Terminal window.
 
 Install Python 3.6.4 with pyenv:
 
-```
+```
 pyenv install 3.6.4
 ```
 
