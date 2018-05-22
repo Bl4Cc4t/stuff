@@ -1,10 +1,10 @@
-# Yuuno on OS X
-===============
+Yuuno on OS X
+=============
 
 This guide is an attempt to help one installing VapourSynth with Yuuno on OS X.
 
-## Prerequisites
-----------------
+Prerequisites
+-------------
 - [Homebrew](https://brew.sh/)  
 - [Python 3](https://www.python.org/)
 - [x264](https://www.videolan.org/developers/x264.html)  
@@ -19,8 +19,8 @@ After doing so, please install the other packages via this command:
 brew install python3 pyenv pyenv-virtualenv pyenv-virtualenvwrapper x264 --with-10-bit
 ```  
 
-## Installing Python 3.6.4 via pyenv
-------------------------------------
+Installing Python 3.6.4 via pyenv
+---------------------------------
 The newest Python 3.6.6 apparently does not work, but this version does ;)
 
 To work, pyenv has to be initialized first.
@@ -51,16 +51,16 @@ pip install jupyter vapoursynth yuuno numpy
 python -m ipykernel install --user
 ```
 
-## Plugins
-----------
+Plugins
+-------
 Plugins can be installed by following the directions on [this](https://github.com/Bl4Cc4t/homebrew-vsplugins) repo.
 
-## Scripts
-----------
+Scripts
+-------
 Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of the folder `scripts` in this directory.  
 
-## Using Yuuno
---------------
+Using Yuuno
+-----------
 Start up jupyter: `jupyter notebook`  
 You can now navigate in your default browser to some directory and create a new script (choose Python 3).  
 Once you created a new script, you have to load yuuno first: `%load_ext yuuno`  
