@@ -57,7 +57,7 @@ Plugins can be installed by following the directions on [this](https://github.co
 
 Scripts
 -------
-Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of the zipped folder `scripts` in this directory.  
+Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of [this zip](https://github.com/Bl4Cc4t/yuuno-on-osx/raw/master/scripts.zip) in this directory.  
 
 Using Yuuno
 -----------
