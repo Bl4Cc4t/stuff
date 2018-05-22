@@ -61,7 +61,19 @@ Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` 
 
 Using Yuuno
 -----------
-Start up jupyter: `jupyter notebook`  
-You can now navigate in your default browser to some directory and create a new script (choose Python 3).  
-Once you created a new script, you have to load yuuno first: `%load_ext yuuno`  
+Start up jupyter: `jupyter notebook`
+You can now navigate in your default browser to some directory and create a new script (choose Python 3).
+Once you created a new script, you have to load yuuno first: `%load_ext yuuno`
 That should be it. More information can be found on the [yuuno page](yuuno.encode.moe/readme.html).
+
+Tips
+----
+I recommend wrapping the start commands in a function and adding it to `~/bash_profile`:
+Replace `<path` with your directory of choice.
+```
+echo "yuuno() {
+  pyenv activate jupyter3
+  python -mwebbrowser http://localhost:8888/notebooks/<path>
+  jupyter notebook --no-browser
+}" >> ~/.bash_profile
+```
