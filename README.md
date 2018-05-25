@@ -57,7 +57,7 @@ Plugins can be installed by following the directions on [this](https://github.co
 
 Scripts
 -------
-Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of [this zip](https://github.com/Bl4Cc4t/yuuno-on-osx/raw/master/scripts.zip) in this directory.  
+Navigate to `~/.pyenv/versions/3.6.4/envs/jupyter3/lib/python3.6/site-packages` and put the contents of [this zip](https://github.com/Bl4Cc4t/yuuno-on-osx/raw/master/scripts.zip) in that directory.  
 
 Using Yuuno
 -----------
@@ -69,7 +69,7 @@ That should be it. More information can be found on the [yuuno page](yuuno.encod
 Tips
 ----
 I recommend wrapping the start commands in a function and adding it to `~/bash_profile`:
-Replace `<path` with your directory of choice.
+Replace `<path>` with your directory of choice.
 ```
 echo "yuuno() {
   pyenv activate jupyter3
